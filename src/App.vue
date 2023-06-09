@@ -3,7 +3,9 @@ import axios from 'axios';
 
 
 const handleSetCookie = () => {
-  axios.get("https://nginx-proxy-st.zeabur.app/api/setcookie")
+  axios.get("https://nginx-proxy-st.zeabur.app/api/setcookie", {
+    withCredentials: true
+  })
 }
 
 const handleGetCookie = () => {
